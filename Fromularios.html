@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario</title>
+</head>
+<body>
+<header> Formularios HTML</header>
+<section>
+  <h2> Etiquetas input</h2>
+  <form name ="formulario" id="formulario" method="post">
+    <label for="username">Nombre de usuario</label>
+    <input type="text" name="username" id="username" placeholder="Escribe tu nombre" size="50" maxlength="10">
+    <h3>Contraseña</h3>
+    <label for="pass" >Contraseña</label>
+    <input type="password" name="pass" id="pass" minlength="8" maxlength="16">
+    <br>
+    <textarea name="mejor" id="mejora" cols="50" rows="10"></textarea>
+    <br>
+    <input type="email"/>
+    <input type="url" name="" id="url"/>
+    <input type="tel" name="" id=""/>
+    <input type="number" min="2" max="20" step="2" />
+    <input type="range" min="1" max="9"/>
+    <input type="color"/>
+    <h4> Rango</h4>
+    <input type="range" min="1" max="9">
+    <h4>Fecha </h4>
+    <input type="date" />
+    <input type="time" />
+    <input type="month" />
+    <input type="datetime-local" />
+    <input type="week" />
+    <h4> Buscar</h4>
+    <input type="search">
+    <h4>Casillas de verificacion</h4>
+    <input type="checkbox" name="patatas" id="patatas">
+    <label for="patatas"> Patatas fritas</label>
+    <input type="checkbox" name="ensalada" id="ensalada" />
+    <label for="ensalada"> Ensalada </label>
+    <input type="checkbox" name="espinacas" id="espinacas" />
+    <label for="espinacas"> espinacas</label>
+    <input type="checkbox" name="gambas" id="gambas" />
+    <label for="gambas"> gambas</label>
+    <br>
+    <p> Indica el grupo de edad al que pertenece</p>
+    <br>
+    <input type="radio" name="id_edad" id="edad1" value="menos15">
+    <label for="">menor de 15</label>
+    <input type="radio" name="id_edad" id="edad2" value="entre15-25">
+    <label for="">Entre 15 y 25 años</label>
+    <input type="radio" name="id_edad" id="edad3" value="entre 25-40">
+    <label for="">Entre 25 y 40 años</label>
+    <input type="radio" name="id_edad" id="edad4" value="Mas de 40">
+    <label for="">Mas de 40</label>
+<select name="pais" id="pais">
+  <optgroup label="Europa">
+    <!--Agrupa los elementos que contiene-->
+    <option value="españa">España</option>
+    <option value="francia">Francia</option>
+    <option value="italia">Italia</option>
+    <option value="portugal">Portugal</option>
+    <option value="Dinamarca">Dinamarca</option>
+    <option value="Gran Bretaña">Gran Bretaña</option>
+    <option value="Estonia">Estonia</option>
+    <option value="Letonia">Letonia</option>
+    <option value="Lituania">Lituania</option>
+    <option value="Suecia">Suecia</option>
+    <option value="Suiza">Suiza</option>
+    <option value="Rusia">Rusia</option>
+    <option value="Bielorrusia">Bielorrusia</option>
+    <option value="Belgica">Bélgica</option>
+    <option value="Alemania">Alemania</option>
+    <option value="Austria">Austria</option>
+    <option value="Grecia">Grecia</option>
+  </optgroup>
+  <outgroup label="América del Norte">
+    <option value="canadá">Canadá</option>
+    <option value="EEUU">EEUU</option>
+  </outgroup>
+  <outgroup label="América del Sur">
+    <option value="Brasil">Brasil</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Perú">Perú</option>
+    <option value="Chile">Chile</option>
+    <option value="Venezuela">Venezuela</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Ecuador">Ecuador</option>
+    <option value="Bolivia">Bolivia</option>
+  </outgroup>
+</select>
+</label>
+    <h4>agrupar campos</h4>
+    <fieldset>
+      <!--Agrupa varios campos de un formulario-->
+      <legend>Tus datos de contacto</legend>
+      <!--Titulo del conjunto de campos-->
+      <label for="Apellido">¿cuáles son tus apellidos?</label>
+      <input type="text" name="apellido" id="apellido"/>
+      <br/>
+      <label for="nombre">¿Cual es tu nombre?</label>
+      <input type="text" name="nombre" id="nombre" />
+      <br/>
+      <label for="email"
+             >¿Cual es tu direccion de correo electrónico?</label
+      >
+      <input type="email" name="email" id="email"/>
+      <br/>
+    </fieldset>
+
+    <h4>Botón de envío</h4>
+    <h5>type="submit", "reset", "image", "button"</h5>
+    <input type="submit" value="enviar"/>
+    <input type="reset" value="enviar"/>
+    <input
+      type="image"
+      src="im"
+      alt="botón pánico"
+    />
+    <input type="button" value="Botón"/>
+    </form>
+  </optgroup>
+</select>
+</label>
+</form>
+</section>
+</body>
+</html>
